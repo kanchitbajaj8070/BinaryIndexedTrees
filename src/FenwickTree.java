@@ -89,4 +89,6 @@ public int query( int i)
         return maxe;
     }
 
-}
+}// if we have to update a range(a,b) with v
+// we can do update( a,+v);
+// and for i> b we have to reduce -v so update(b+1,-v)
