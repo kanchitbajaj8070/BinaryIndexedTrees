@@ -28,7 +28,7 @@ public class FenwickTree {
     }
     FenwickTree(int n, int []arr)
     {this.n=n;
-        this.bit=new int[ arr.length+1];
+        this.bit=new int[ n+1];
 //build( n, arr)
 
     }
@@ -59,7 +59,7 @@ public class FenwickTree {
     }
     //sum for 1..i
     //e g for [1..7]=>[1,4]+[5,6]+[7,7] => 111(7)=>110(6)=>100(4)==>000(0)
-    private int query( int i)
+public int query( int i)
     {int sum=0;
         while(i>0)
         {
